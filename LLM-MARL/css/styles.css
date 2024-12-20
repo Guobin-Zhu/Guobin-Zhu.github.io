@@ -1,20 +1,59 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 20px;
+/* Author and Unit styles */
+.author {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap; /* Ensure authors wrap to next line if necessary */
 }
 
-header {
-    text-align: center;
+.author-name {
+    margin-right: 10px;
+    font-size: 1em;
+}
+
+.superscript {
+    font-size: 0.8em;
+    vertical-align: super;
+}
+
+.affiliation {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+.affiliation p {
+    margin: 5px 0;
+}
+
+/* Page header and basic formatting */
+header h1 {
+    font-size: 2em;
     margin-bottom: 20px;
 }
 
+header p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+/* Section formatting */
 section {
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
+section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 1em;
+}
+
+/* Footer */
 footer {
+    margin-top: 30px;
     text-align: center;
-    margin-top: 20px;
+    font-size: 0.9em;
+    color: #777;
 }
