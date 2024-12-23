@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Efficient Multi-Agent Reinforcement Learning by LLM</title>
+    <title>LADRL: LLM-Assisted Design for Efficient Multi-Agent Reinforcement Learning</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header class="center-content">
-        <h1>Efficient Multi-Agent Reinforcement Learning by LLM</h1>
+        <h1>LADRL: LLM-Assisted Design for Efficient Multi-Agent Reinforcement Learning</h1>
         <p><strong>Authors:</strong></p>
         <div class="author">
             <span class="author-name">Guobin Zhu<sup class="superscript">1,2</sup></span>
@@ -21,14 +21,34 @@
             <p><sup>1</sup> School of Automation Science and Electrical Engineering, Beihang University, Beijing, China</p>
             <p><sup>2</sup> WINDY Lab, School of Engineering at Westlake University, Hangzhou, China</p>
         </div>
+        <div class="code-link">
+            <button onclick="window.open('https://github.com/Guobin-Zhu/MARL-LLM', '_blank')">Code</button>
+        </div>
     </header>
-    <section id="abstract" class="center-content">
+    <section id="abstract" class="center-content abstract-content">
         <h2>Abstract</h2>
-        <p>Write your abstract here.</p>
+        <p>Sample inefficiency and reward design challenges have long been key issues in multi-agent reinforcement learning (MARL). Previous approaches either require meticulous design or rely on large amounts of expert data, limiting their general applicability. Recently, large language models (LLMs), with their broad commonsense knowledge and powerful generative capabilities, show promise in addressing these challenges. In this paper, we propose an LLM-assisted RL design framework (LADRL) consisting of two parts. The first part involves using LLMs to design rewards by providing a structured prompt containing essential APIs and key problem statements, eliminating the need for manual reward design. The second part involves using LLMs to design a prior policy that ensures agents maintain basic behaviors, aiding the LLM-designed reward in completing complex tasks while improving sample efficiency. We validate the proposed LADRL approach through both simulation and real-world experiments on complex multi-agent tasks, demonstrating its advantages.</p>
     </section>
+
+    <!-- Section for Image -->
+    <section id="image" class="center-content">
+        <img src="images/framework.jpg" width="800" height="450" alt="PDF Image" class="center-image">
+    </section>
+
     <section id="methodology" class="center-content">
         <h2>Methodology</h2>
         <p>Write your methodology here.</p>
+        
+        <section id="llm-designed-reward" class="center-content left-align">
+            <h3>LLM-designed Reward</h3>
+            <p>Write about LLM-designed reward here.</p>
+        </section>
+        
+        <section id="llm-designed-prior-policy" class="center-content left-align">
+            <h3>LLM-designed Prior Policy</h3>
+            <p>Write about LLM-designed prior policy here.</p>
+        </section>
+
     </section>
     <section id="results" class="center-content">
         <h2>Results</h2>
@@ -37,6 +57,5 @@
     <footer class="center-content">
         <p>&copy; Year Guobin Zhu</p>
     </footer>
-    <script src="js/scripts.js"></script>
 </body>
 </html>

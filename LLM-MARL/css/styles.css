@@ -2,6 +2,17 @@
 .center-content {
     text-align: center;
     margin: 0 auto;
+    max-width: 900px; /* Set a maximum width for centered content */
+}
+
+/* Ensure text is justified */
+.justify-content {
+    text-align: justify;
+}
+
+/* Left align specific sections */
+.left-align h3 {
+    text-align: left;
 }
 
 /* Author and Unit styles */
@@ -32,6 +43,39 @@
     margin: 5px 0;
 }
 
+/* Code link styles */
+.code-link {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+.code-link a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.code-link a:hover {
+    text-decoration: underline;
+}
+
+.code-link button {
+    background-color: #333333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px; /* Increase the border-radius to make the corners more rounded */
+}
+
+.code-link button:hover {
+    background-color: #333333;
+}
+
 /* Page header and basic formatting */
 header h1 {
     font-size: 2em;
@@ -55,6 +99,16 @@ section h2 {
 
 section p {
     font-size: 1em;
+    text-align: justify; /* Ensure text is justified */
+}
+
+/* Centering image styles */
+.center-image {
+    display: block;   /* Makes the image a block element */
+    margin-left: auto;  /* Auto left margin */
+    margin-right: auto; /* Auto right margin */
+    max-width: 100%; /* Ensure the image doesn't overflow */
+    height: auto; /* Maintain the aspect ratio */
 }
 
 /* Footer */
@@ -63,4 +117,9 @@ footer {
     text-align: center;
     font-size: 0.9em;
     color: #777;
+}
+
+/* Specific width for abstract section */
+.abstract-content {
+    max-width: 600px; /* Set a specific maximum width for abstract */
 }
