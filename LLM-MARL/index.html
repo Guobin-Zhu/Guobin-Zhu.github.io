@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LADRL: LLM-Assisted Design for Efficient Multi-Agent Reinforcement Learning</title>
+    <title>LAMARL: LLM-Aided Multi-Agent Reinforcement Learning</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header class="center-content">
-        <h1>LADRL: LLM-Assisted Design for Efficient Multi-Agent Reinforcement Learning</h1>
+        <h1>LAMARL: LLM-Aided Multi-Agent Reinforcement Learning</h1>
         <p><strong>Authors:</strong></p>
         <div class="author">
             <span class="author-name">Guobin Zhu<sup class="superscript">1,2</sup></span>
@@ -27,7 +27,7 @@
     </header>
     <section id="abstract" class="center-content abstract-content">
         <h2>Abstract</h2>
-        <p>Sample inefficiency and reward design challenges have long been key issues in multi-agent reinforcement learning (MARL). Previous approaches either require meticulous design or rely on large amounts of expert data, limiting their general applicability. Recently, large language models (LLMs), with their broad commonsense knowledge and powerful generative capabilities, show promise in addressing these challenges. In this paper, we propose an LLM-assisted RL design framework (LADRL) consisting of two parts. The first part involves using LLMs to design rewards by providing a structured prompt containing essential APIs and key problem statements, eliminating the need for manual reward design. The second part involves using LLMs to design a prior policy that ensures agents maintain basic behaviors, aiding the LLM-designed reward in completing complex tasks while improving sample efficiency. We validate the proposed LADRL approach through both simulation and real-world experiments on complex multi-agent tasks, demonstrating its advantages.</p>
+        <p>Although Multi-Agent Reinforcement Learning (MARL) is suitable for addressing complex multi-robot system tasks, it suffers from low sample efficiency and requires frequent manual tuning of reward functions. Large Language Models (LLMs) have shown promise in single-robot scenarios, but their application in multi-robot systems remains largely unexplored. This paper introduces a novel LLM-aided MARL (LAMARL) approach, which integrates MARL with LLMs in two key parts. First, the LLM is used to design a prior policy, which is incorporated into the actor loss of MARL to equip robots with basic task capabilities. Second, the LLM is used to design a reward function, where basic APIs and the Chain-of-Thought (CoT) mechanism in the prompt enable more accurate and reliable outputs. In complex exploration tasks, comparative experiments demonstrate that LAMARL achieves near-optimal performance without the need for manual design. Ablation studies show that the prior policy improves sample efficiency by over 2 times and significantly aids in task completion. Real-world experiments further confirm the feasibility of LAMARL.</p>
     </section>
 
     <!-- Section for Image -->
