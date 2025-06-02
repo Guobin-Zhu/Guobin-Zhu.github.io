@@ -26,7 +26,17 @@
 
 .author-name {
     margin-right: 10px;
-    font-size: 1em;
+    font-size: 1.2em;
+}
+
+/* Author link styles */
+.author-link {
+    color: #009dff; /* Highlight color */
+    text-decoration: none; /* Remove underline */
+}
+
+.author-link:hover {
+    text-decoration: underline; /* Add underline on hover */
 }
 
 .superscript {
@@ -122,4 +132,50 @@ footer {
 /* Specific width for abstract section */
 .abstract-content {
     max-width: 600px; /* Set a specific maximum width for abstract */
+}
+
+/*############################ Specific width for video section ############################*/
+.video-content {
+    max-width: 1360px; /* Set a specific maximum width for abstract */
+}
+
+/* Video container styles */
+.video-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center items */
+    gap: 0px; /* Adjust the gap as needed */
+}
+
+.video-container figure {
+    position: relative; /* Position figures relatively */
+    text-align: center; /* Center the caption text */
+    margin: 0; /* Remove default margin */
+    border: 0.5px solid #000; /* Add border to each figure */
+    padding: 0px; /* Add padding inside the border */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Category 1 border styles */
+.category1 {
+    flex: 1 1 45%; /* Adjust the width of each figure */
+    max-width: 45%; /* Ensure figures don't exceed 45% of the container width */
+}
+
+/* Category 2 border styles */
+.category2 {
+    flex: 1 1 25%; /* Adjust the width of each figure */
+    max-width: 22.5%; /* Ensure figures don't exceed 45% of the container width */
+}
+
+/* 标题位置：左上角 */
+.video-title {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: rgba(0, 0, 0, 0.4); /* 背景颜色，可以根据需要调整 */
+    color: white; /* 文字颜色 */
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px; /* 可选，增加圆角效果 */
 }
