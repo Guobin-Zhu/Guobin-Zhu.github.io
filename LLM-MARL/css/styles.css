@@ -156,18 +156,6 @@ footer {
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
-/* Category 1 border styles */
-.category1 {
-    flex: 1 1 45%; /* Adjust the width of each figure */
-    max-width: 45%; /* Ensure figures don't exceed 45% of the container width */
-}
-
-/* Category 2 border styles */
-.category2 {
-    flex: 1 1 25%; /* Adjust the width of each figure */
-    max-width: 22.5%; /* Ensure figures don't exceed 45% of the container width */
-}
-
 /* 标题位置：左上角 */
 .video-title {
     position: absolute;
